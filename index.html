@@ -84,6 +84,82 @@
     padding: 10px 0;
   }
 
+/* newly added style*/
+.gtco-cover {
+  height: 630px;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.gtco-cover .overlay {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.gtco-cover > .gtco-container {
+  position: relative;
+  z-index: 10;
+}
+.gtco-container-lid {
+  max-width: 1140px;
+  position: relative;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .gtco-cover {
+    height: 600px;
+  }
+}
+.gtco-cover .display-t,
+.gtco-cover .display-tc {
+  height: 700px;
+  display: table;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .gtco-cover .display-t,
+  .gtco-cover .display-tc {
+    height: 600px;
+  }
+}
+.gtco-cover.gtco-cover-sm {
+  height: 600px;
+}
+@media screen and (max-width: 768px) {
+  .gtco-cover.gtco-cover-sm {
+    height: 400px;
+  }
+}
+.gtco-cover.gtco-cover-sm .display-t,
+.gtco-cover.gtco-cover-sm .display-tc {
+  height: 600px;
+  display: table;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .gtco-cover.gtco-cover-sm .display-t,
+  .gtco-cover.gtco-cover-sm .display-tc {
+    height: 400px;
+  }
+}
+
+ 
+
+
+
+ /* new feature    */
+
+
 	</style>
 
 	<body>
@@ -147,21 +223,6 @@
 
 		
 
-	<div id="gtco-features">
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-4 col-sm-4 feature-center">
-					<div class="feature-center animate-box" data-animate-effect="fadeIn">
-					<br>
-					<br><br>
-						<h3>PROUDLY BROUGHT TO YOU BY</h3>
-						        <img src="images/ceg.png" class="sep"> 
-						<p><a target="_blank" href="https://en.wikipedia.org/wiki/College_of_Engineering,_Guindy" class="btn btn-primary">Learn More</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 				
 	<div id="gtco-features-2">
@@ -261,7 +322,7 @@
 								<span class="icon">
 									<i class="icon-briefcase"></i>
 								</span>
-								<span class="counter js-counter" data-from="0" data-to="100" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter js-counter" data-from="0" data-to="97" data-speed="5000" data-refresh-interval="50">1</span>
 								<span class="counter-label">Colleges Visited</span>
 							</div>
 						</div>
@@ -271,7 +332,7 @@
 									<i class="icon-clock"></i>
 								</span>
 
-								<span class="counter js-counter" data-from="0" data-to="100000" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter js-counter" data-from="0" data-to="7000" data-speed="5000" data-refresh-interval="50">1</span>
 								<span class="counter-label">Beneficiaries</span>
 
 							</div>
@@ -281,6 +342,28 @@
 			</div>
 		</div>
 	</div>
+
+
+	<div id="gtco-features">
+		<div class="gtco-container">
+			
+				<div class="col-md-4 col-sm-4 feature-center">
+					<div class="feature-center animate-box" data-animate-effect="fadeIn">
+					
+						<h3>PROUDLY BROUGHT TO YOU BY</h3>
+						        <img src="images/ceg.png" class="sep"> 
+						<p>
+						<a target="_blank" href="https://en.wikipedia.org/wiki/College_of_Engineering,_Guindy" class="btn btn-primary">Learn More</a></p>
+					</div>
+				</div>
+			</div>
+		
+
+
+	</div>
+
+
+
 
 
 	<footer id="gtco-footer" role="contentinfo">
